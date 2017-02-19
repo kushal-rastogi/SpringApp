@@ -23,9 +23,9 @@ spring:
   profiles: prod
 datasource:
   sampleapp:
-    url: jdbc:mysql://localhost:3306/websystique
-    username: myuser
-    password: mypassword
+    url: jdbc:mysql://localhost:3306/websystique1
+    username: root
+    password:
     driverClassName: com.mysql.jdbc.Driver
     defaultSchema:
     maxPoolSize: 20
@@ -34,4 +34,5 @@ datasource:
       show_sql: true
       format_sql: true
       dialect: org.hibernate.dialect.MySQLDialect
+      #-Dspring.profiles.active=prod
 
